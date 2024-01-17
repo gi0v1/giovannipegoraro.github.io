@@ -25,7 +25,6 @@
             font-weight: bold; /* Change this to your desired font weight */
             font-size: 20px; /* Font size */
             margin-left: 20px; /* Add space to the left of each link */
-            margin-top: 50px; /* Add space to the top of the image */
         }
         img {
             width: 500px;
@@ -35,6 +34,12 @@
         .links {
             display: flex;
             justify-content: flex-end;
+            position: relative;
+            top: 0px; /* Adjust this to move the links up or down */
+        }
+        .image {
+            position: relative;
+            top: 0px; /* Adjust this to move the image up or down */
         }
     </style>
 </head>
@@ -50,7 +55,9 @@
                 <p><a style="text-decoration:none" href="projects.html">My Projects</a></p>
                 <p><a style="text-decoration:none" href="contacts.html">Contacts</a></p>
             </div>
-            <img src="img.jpg" alt="Your Image Description">
+            <div class="image">
+                <img src="img.jpg" alt="Your Image Description">
+            </div>
         </div>
     </div>
 </body>
