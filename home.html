@@ -3,23 +3,34 @@
 <head>
     <title>Giovanni Pegoraro</title>
     <style>
+        .container {
+            display: flex; /* This will arrange the elements in a row */
+            justify-content: space-between; /* This will put space between the elements */
+        }
         h1 {
             color: #C0392B; /* Title's color */
-            font-family: Arial, sans-serif; /* Change this to your desired font */
-            width: 80%; /* Change this to your desired width */
-            margin: 0 auto; /* This centers the h1 content */
-        }
-        p, a {
             font-family: Garamond, serif; /* Change this to your desired font */
-            width: 80%; /* Change this to your desired width */
-            margin: 0 auto; /* This centers the p and a content */
+        }
+        p {
+            font-family: Garamond, serif; /* Change this to your desired font */
+        }
+        a {
+            font-family: Arial, sans-serif; /* Change this to your desired font */
+        }
+        img {
+            width: 500px;
+            height: 600px;
         }
     </style>
 </head>
 <body>
-    <p><a href="projects.html">My Projects</a></p>
-    <h1>Giovanni Pegoraro</h1>
+    <div class="container">
+        <div>
+            <p><a href="projects.html">My Projects</a></p>
+            <h1>Giovanni Pegoraro</h1>
+        </div>
+        <img src="img.jpg" alt="Your Image Description">
+    </div>
     <p>This is a brief description of your website. You can replace this text with any content you'd like to display.</p>
-    <img src="img.jpg" width="500" height="600" alt="Your Image Description">
 </body>
 </html>
