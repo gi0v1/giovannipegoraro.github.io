@@ -7,21 +7,6 @@
             display: flex; /* This will arrange the elements in a row */
             justify-content: space-between; /* This will put space between the elements */
         }
-        h1 {
-            color: #C0392B; /* Title's color */
-            font-family: Garamond, serif; /* Change this to your desired font */
-            font-weight: normal; /* Change this to your desired font weight */
-            font-size: 60px; /* Font size */
-            margin-left: 70px;
-            margin-top: 250px;
-        }
-        p {
-            font-family: Garamond, serif; /* Change this to your desired font */
-            font-weight: normal; /* Change this to your desired font weight */
-            font-size: 20px; /* Font size */
-            text-align: right;
-            margin-top: 600px;
-        }
         b {
             color: #ABB2B9; /* Text's color */
             font-family: Courier, monospace; /* Change this to your desired font */
@@ -35,13 +20,27 @@
             font-family: Courier, monospace; /* Change this to your desired font */
             font-weight: bold; /* Change this to your desired font weight */
             font-size: 20px; /* Font size */
-            margin-left: 20px; /* Add space to the left of each link */
+            margin-right: 20px; /* Add space to the left of each link */
             margin-top: 20px;
+        }
+        h1 {
+            color: #C0392B; /* Title's color */
+            font-family: Garamond, serif; /* Change this to your desired font */
+            font-weight: normal; /* Change this to your desired font weight */
+            font-size: 60px; /* Font size */
+            margin-left: 130px;
+            margin-top: 150px;
+        }
+        p {
+            font-family: Garamond, serif; /* Change this to your desired font */
+            font-weight: normal; /* Change this to your desired font weight */
+            font-size: 20px; /* Font size */
+            margin-top: 350px;
         }
         img {
             width: 500px;
             height: 600px;
-            margin-top: 40px; /* Add space to the top of the image */
+            margin-top: 60px; /* Add space to the top of the image */
             margin-right: 50px
         }
         .links {
@@ -52,7 +51,7 @@
 </head>
 <body>
     <div class="container">
-        <b>Giovanni Pegoraro</b>
+        <b style="text-decoration:none" href="home/home.html">Giovanni Pegoraro</b>
         <div class="links">
             <a href="home/home.html">About Me</a>
             <a style="text-decoration:none" href="projects/projects.html">My Projects</a>
@@ -61,7 +60,7 @@
     </div>
     <div style="display: flex; justify-content: space-between;">
         <h1 style="text-align: left;">Hi!</h1>
-        <p>High School student interested in Electronics, Automation and IT. I'm very fond of technology more broadly, I love 3D printing and embedded devices. I'm eager to learn and discover new things.</p>
+        <p style="text-align: right; margin-right: 30px;">High School student interested in Electronics, Automation and IT. I'm very fond of technology more broadly, I love 3D printing and embedded devices. I'm eager to learn and discover new things.</p>
         <img src="img.jpg" alt="Your Image Description">
     </div>
 </body>
