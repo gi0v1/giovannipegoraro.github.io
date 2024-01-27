@@ -48,8 +48,18 @@
             justify-content: flex-end;
             margin-bottom: 10px;
         }
+        #arrow {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            font-size: 50px;
+            color: #000;
+            z-index: 100;
+        }
     </style>
 </head>
+
+
 <body>
     <div class="container">
         <a class="head" style="text-decoration:none; margin-left: 30px;" href="../home/home.html">Giovanni Pegoraro</a>
@@ -60,6 +70,7 @@
             <a class="head" style="text-decoration:none; margin-right: 30px;" href="../contacts/contacts.html">Contacts</a>
         </div>
     </div>
+
     <div style="display: flex; justify-content: space-between;">
         <div>
             <h1 style="text-align: left;">
@@ -77,6 +88,21 @@
         </div>
         <img class="right" src="robottino.png" alt="Your Image Description">
     </div>
+
+    <div style="display: flex; justify-content: space-between;">
+        <img class="left" style="height: 300px;" src="lato_nastro.jpg" alt="Your Image Description">
+        <div>
+            <h1 style="text-align: left;">
+                Omron
+                <br />
+                Smart Project
+            </h1>
+            <p style="text-align: right; margin-left: 80px; margin-right: 175px">
+                At school we are developing the software for 
+            </p>
+        </div>
+    </div>
+
     <div style="display: flex; justify-content: space-between;">
         <img class="left" style="height: 300px;" src="rotatecam.png" alt="Your Image Description">
         <div>
@@ -88,5 +114,8 @@
             </p>
         </div>
     </div>
+    <div id="arrow">&darr;</div>
+
+    <script src="scroll.js"></script>
 </body>
 </html>
