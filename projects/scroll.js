@@ -5,7 +5,7 @@ function scrollFunction() {
   var documentHeight = document.documentElement.scrollHeight;
   var scrollPosition = window.scrollY;
 
-  if (scrollPosition + windowHeight > (documentHeight/3)) {
+  if (scrollPosition + windowHeight > (documentHeight)) {
     document.getElementById("arrow").style.display = "block";
   } else {
     document.getElementById("arrow").style.display = "none";
