@@ -1,13 +1,11 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+window.addEventListener('scroll', function() {
+  var arrow = document.querySelector('#arrow');
   var windowHeight = window.innerHeight;
-  var documentHeight = document.documentElement.scrollHeight;
-  var scrollPosition = window.scrollY;
+  var scrollHeight = window.scrollY;
 
-  if (scrollPosition + windowHeight > documentHeight) {
-    document.getElementById("arrow").style.display = "block";
+  if (scrollHeight > windowHeight / 3) {
+      arrow.style.display = 'none';
   } else {
-    document.getElementById("arrow").style.display = "none";
+      arrow.style.display = 'block';
   }
-}
+});
